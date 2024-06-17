@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Web Bán Sản Phẩm</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header bg-dark text-white py-3">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <img src="img/logo.png" alt="Logo" class="img-fluid" />
+          </div>
+          <nav class="menu d-none d-md-flex">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#home">Trang Chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#services">Dịch Vụ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">Giới Thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Liên Hệ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hamburger d-md-none">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content container my-4 p-4 bg-white rounded shadow">
+      <div class="row product-content mb-4">
+        <div class="col-md-6 video-container mb-4 mb-md-0">
+          <video width="100%" controls>
+            <source
+              src="video/Cách Buộc Dây Giày Đẹp Cho Nam Và Nữ Rất Ít Người Biết.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ video tag.
+          </video>
+        </div>
+        <div class="col-md-6 product-info p-4 bg-light rounded shadow-sm">
+          <h3>Máy Pha Cà Phê Tự Động</h3>
+          <p>
+            Khám phá máy pha cà phê tự động hiện đại của chúng tôi! Với thiết kế
+            tinh tế và công nghệ tiên tiến, bạn có thể thưởng thức ly cà phê
+            hoàn hảo ngay tại nhà mỗi ngày. Máy có nhiều chế độ pha khác nhau,
+            phù hợp với mọi sở thích của bạn.
+          </p>
+          <button class="btn btn-danger">Tìm Hiểu Thêm</button>
+        </div>
+      </div>
+
+      <div class="row product-list">
+        <div class="col-12 col-sm-6 col-md-4 product-item mb-4">
+          <div class="card h-100">
+            <img src="img/giày nike.jpeg" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Máy Pha Cà Phê Espresso</h5>
+              <p class="card-text text-danger">Giá: 5,000,000 VND</p>
+              <button class="btn btn-dark">Mua Ngay</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 product-item mb-4">
+          <div class="card h-100">
+            <img src="img/giay-adidas.png" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Máy Xay Cà Phê Mini</h5>
+              <p class="card-text text-danger">Giá: 1,500,000 VND</p>
+              <button class="btn btn-dark">Mua Ngay</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 product-item mb-4">
+          <div class="card h-100">
+            <img src="img/giay-Jordan.jpeg" class="card-img-top" alt="" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Cà Phê Hạt Arabica</h5>
+              <p class="card-text text-danger">Giá: 300,000 VND</p>
+              <button class="btn btn-dark">Mua Ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="aside container my-4 p-4 bg-white rounded shadow">
+      <h2>Thông Tin Bổ Sung</h2>
+      <p>
+        Đây là nơi chúng tôi cung cấp thêm thông tin hoặc các liên kết hữu ích
+        liên quan đến sản phẩm và dịch vụ của chúng tôi. Đừng bỏ lỡ!
+      </p>
+    </aside>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 Trang Web Bán Sản Phẩm. Mọi quyền được bảo lưu.</p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
